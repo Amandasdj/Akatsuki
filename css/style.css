@@ -22,6 +22,7 @@ aside ul li{
 body{
     display: grid;
     cursor: url(../images/kunai.png), default;
+    font-family: 'Permanent Marker';
     grid-template-areas: 'navbar navbar navbar navbar'
                           'header header header aside'
                           'section section section aside'
@@ -43,6 +44,7 @@ header{
     grid-area: header;
 }
 nav{
+    align-items: center;
     background-color: #373b31;
     display: flex;
     justify-content: space-around;
@@ -58,10 +60,24 @@ nav a:hover{
     cursor: url(../images/kunai.png), default;
 }
 
-nav>img{
+nav > img{
 
     width:45px;
 }
 section{
     grid-area: section;
+}
+section div{
+    display: flex;
+    justify-content: center;
+}
+section h2{
+    margin: 0;
+    text-align: center;
+}
+section input:focus{
+    background-color: lightgrey;
+}
+section input::placeholder{
+    color: #bb2127
 }
