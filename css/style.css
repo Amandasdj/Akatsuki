@@ -18,7 +18,23 @@ header{
     grid-area: header;
 }
 nav{
+    background-color: #373b31;
+    display: flex;
+    justify-content: space-around;
     grid-area: navbar;
+    font-family: 'Permanent Marker',  'cursive';
+    }
+nav a{
+    color:whitesmoke;
+    text-decoration: none;
+    }
+nav a:hover{ 
+    color: #bb2127;
+}
+
+nav>img{
+
+    width:45px;
 }
 section{
     grid-area: section;
