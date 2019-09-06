@@ -28,7 +28,7 @@ body{
                           'section section section aside'
                           'footer footer footer aside';    
 grid-template-columns: 25vw 25vw 25vw 25vw;                                     
-grid-template-rows: 8vh 40vh 65vh 30vw;
+grid-template-rows: 8vh 40vh 65vh 12vw;
 margin: 0;
 }
 body::-webkit-scrollbar{
