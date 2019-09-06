@@ -26,30 +26,46 @@ body{
     grid-template-areas: 'navbar navbar navbar navbar'
                           'header header header aside'
                           'section section section aside'
-                          'footer footer footer footer';    
+                          'footer footer footer aside';    
 grid-template-columns: 25vw 25vw 25vw 25vw;                                     
-grid-template-rows: 8vh 40vh 60vh 10vh;
+grid-template-rows: 8vh 40vh 65vh 30vw;
 margin: 0;
 }
 body::-webkit-scrollbar{
     width: 0px; /* Remove a barra de rolagem*/
     background: transparent;  /* Opicional:só deixa o a barra de rolagem invisivel*/
 }
-footer{
+footer{ 
+    background-color: #353732;
+    text-align: center;
     grid-area: footer;
+    margin: 0;
 }
+
+ footer a img{
+     width: 40px;
+    }
+    footer div{
+        display: flex;
+        justify-content: center;
+    }
 header{
     background-image: url("../images/akatsuki.jpg");
     background-size: cover;
     grid-area: header;
 }
+h2{ 
+font-family: 'Permanent Marker';
+}
+
 nav{
     align-items: center;
     background-color: #373b31;
     display: flex;
+    font-family: 'Permanent Marker', 'cursive';
+    grid-area: navbar;
     justify-content: space-around;
-    font-family: 'Permanent Marker',  'cursive';
-    grid-area: navbar;}
+}
 nav a{
     color:whitesmoke;
     text-decoration: none;
@@ -64,7 +80,11 @@ nav > img{
 
     width:45px;
 }
+ p{
+     font-family: Arial, Helvetica, sans-serif
+}
 section{
+    background-color: #353732;
     grid-area: section;
 }
 section div{
